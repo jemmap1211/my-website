@@ -1,0 +1,111 @@
+/* Body Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Headers */
+h1 {
+  color: #2a4d69;
+  text-align: center;
+  font-size: 36px;
+}
+
+h2 {
+  color: #4b86b4;
+  border-bottom: 2px solid #adcbe3;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #2a4d69;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2a4d69;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  color: #4b86b4;
+}
+
+/* Images */
+img {
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #adcbe3;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Blockquote */
+blockquote {
+  background-color: #e7eff6;
+  border-left: 5px solid #4b86b4;
+  padding: 15px;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: #4b86b4;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Sections */
+section, aside {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #2a4d69;
+  color: white;
+  text-align: center;
+}
