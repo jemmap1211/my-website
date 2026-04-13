@@ -3,132 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Materialize Page</title>
+  <title>My Materialize JS Page</title>
 
-  <!-- Materialize CSS CDN -->
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Materialize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  <!-- Your regular stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body class="blue lighten-5">
+  <style>
+    body {
+      background-color: #f5f7fb;
+    }
 
-  <!-- Navigation -->
-  <nav class="teal darken-2">
+    nav {
+      background-color: #6a1b9a;
+    }
+
+    h1, h2 {
+      color: #4a148c;
+    }
+
+    .section-box {
+      background: white;
+      padding: 25px;
+      margin-top: 30px;
+      border-radius: 12px;
+    }
+
+    .carousel .carousel-item img {
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      background-color: #ede7f6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
     <div class="nav-wrapper container">
-      <a href="index.html" class="brand-logo">Gym Guide</a>
+      <a href="#" class="brand-logo">Jemma's Page</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="materialize.html">Materialize</a></li>
+        <li><a href="#carousel-section">Carousel</a></li>
+        <li><a href="#faq-section">Collapsible</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Header Section -->
   <div class="container">
-    <div class="section center">
-      <h1 class="teal-text text-darken-3">Welcome to My Materialize Page</h1>
-      <p class="flow-text grey-text text-darken-2">
-        This page is part of my gym-themed website. I used Materialize to create a cleaner design,
-        add styled sections, include media, and improve the user experience.
-      </p>
-      <a class="waves-effect waves-light btn teal">Learn More</a>
-      <a class="waves-effect waves-light btn pink lighten-1">Get Started</a>
-    </div>
-
-    <!-- Cards Section -->
-    <div class="row">
-      <div class="col s12 m4">
-        <div class="card blue lighten-4">
-          <div class="card-image">
-            <img src="images/workout1.jpg" alt="Workout tips">
-          </div>
-          <div class="card-content">
-            <span class="card-title">Workout Tips</span>
-            <p>Simple gym tips can help beginners feel more confident and comfortable when starting out.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s12 m4">
-        <div class="card pink lighten-4">
-          <div class="card-image">
-            <img src="images/workout2.jpg" alt="Healthy food">
-          </div>
-          <div class="card-content">
-            <span class="card-title">Healthy Eating</span>
-            <p>Fueling your body before and after the gym can improve your energy and recovery.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s12 m4">
-        <div class="card teal lighten-4">
-          <div class="card-image">
-            <img src="images/workout3.jpg" alt="Gym motivation">
-          </div>
-          <div class="card-content">
-            <span class="card-title">Motivation</span>
-            <p>Having a positive mindset and a clear routine can make going to the gym less stressful.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Circular Image Section -->
-    <div class="section center">
-      <h2 class="teal-text text-darken-2">Featured Image</h2>
-      <img src="images/workout4.jpg" alt="Circular gym image" class="circle responsive-img" style="width: 250px; height: 250px; object-fit: cover;">
-      <p class="flow-text">
-        This circular image adds a fun visual style and helps make the page look more modern.
+    <div class="section-box">
+      <h1 class="center-align">Materialize JavaScript Assignment</h1>
+      <p class="center-align">
+        This page shows customized Materialize JavaScript interactions using a carousel and a collapsible section.
       </p>
     </div>
-<div class="section center">
-  <h2 class="teal-text">My Circular Image</h2>
 
-  <img src="images/yourimage.jpg" alt="me" 
-       class="circle responsive-img" 
-       style="width:200px; height:200px; object-fit:cover;">
+    <!-- Carousel Section -->
+    <div id="carousel-section" class="section-box">
+      <h2>Featured Images</h2>
+      <p>This carousel uses Materialize JavaScript and has been customized with my own images and colors.</p>
 
-  <p>This is a circular image using Materialize.</p>
-</div>
-    <!-- Video Embed Section -->
-    <div class="section">
-      <h2 class="center teal-text text-darken-2">Fitness Video</h2>
-      <div class="video-container">
-        <iframe width="853" height="480" src="https://www.youtube.com/embed/ml6cT4AZdqI" title="YouTube video player" allowfullscreen></iframe>
+      <div class="carousel">
+        <a class="carousel-item" href="#one!">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+        </a>
+        <a class="carousel-item" href="#two!">
+          <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e">
+        </a>
+        <a class="carousel-item" href="#three!">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+        </a>
+        <a class="carousel-item" href="#four!">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+        </a>
+        <a class="carousel-item" href="#five!">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+        </a>
       </div>
     </div>
-<div class="section">
-  <h2 class="center pink-text">Workout Video</h2>
 
-  <div class="video-container">
-    <iframe width="853" height="480" 
-      src="https://www.youtube.com/embed/ml6cT4AZdqI" 
-      frameborder="0" allowfullscreen>
-    </iframe>
-  </div>
-</div>
-    <!-- Extra Content -->
-    <div class="section center">
-      <h2 class="pink-text text-darken-2">Why This Page Works</h2>
-      <p>
-        This page matches the theme of my site, uses strong visuals, has easy navigation, and shows
-        that I can use both regular HTML/CSS and Materialize components together.
-      </p>
+    <!-- Collapsible Section -->
+    <div id="faq-section" class="section-box">
+      <h2>Questions About This Page</h2>
+
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">code</i>What is Materialize JS?
+          </div>
+          <div class="collapsible-body">
+            <span>Materialize JS adds interactive features like carousels, collapsibles, modals, and more.</span>
+          </div>
+        </li>
+
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">build</i>What did I customize?
+          </div>
+          <div class="collapsible-body">
+            <span>I changed the colors, added my own heading text, used my own images, and organized the layout to match my page style.</span>
+          </div>
+        </li>
+
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">public</i>What do I submit?
+          </div>
+          <div class="collapsible-body">
+            <span>I will upload this updated page to GitHub and submit the published GitHub Pages URL.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Button Example -->
+    <div class="section-box center-align">
+      <a class="waves-effect waves-light btn purple">Click Me</a>
+      <a class="waves-effect waves-light btn pink">Another Button</a>
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="page-footer teal darken-2">
-    <div class="container center">
-      <p class="white-text">© 2026 My Gym Guide Website</p>
-    </div>
+  <footer>
+    <p>Created with Materialize CSS and JavaScript</p>
   </footer>
 
-  <!-- Materialize JS CDN -->
+  <!-- Materialize JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const carousels = document.querySelectorAll('.carousel');
+      M.Carousel.init(carousels, {
+        fullWidth: false,
+        indicators: true
+      });
+
+      const collapsibles = document.querySelectorAll('.collapsible');
+      M.Collapsible.init(collapsibles);
+    });
+  </script>
 </body>
 </html>
